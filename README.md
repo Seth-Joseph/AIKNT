@@ -1,4 +1,4 @@
 # AIKNT
-Website for AIKNT
-/n www.aiknt.com
-/n Made By Seth Alencherry
+Website for AIKNT /n
+www.aiknt.com
+Made By Seth Alencherry

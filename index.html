@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+        <title>AIKNT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><h1>AIKNT</h1></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="vediogallery.html">VIDEO GALLERRY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>AIKNT</h1>
+                <a href="about.html" class="hero-btn">Know More</a>
+            </div>
+        </section>
+
+<!-----vision mission goals---------->
+
+        <section class="course">
+             <div class="row">
+                 <div class="course-col">
+                     <h3>Vision</h3>
+                     <p>Transform Society positively towards Global Standards of Cleanliness, Build A Great City and Bring Innovative never seen technologies & Services at Indian Railways .</p>
+                 </div>
+                 <div class="course-col">
+                    <h3>Mission</h3>
+                    <p>Translate Knowledge into Reality. Global Medical & Health Tourism in an Ecofriendly manner as part of Covid protocol as well Management & prevention of all diseases.. and Economic Developments.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Goals</h3>
+                    <p>Assist in Knowledge Revolution by taking the world to a post Cspaitslism .. post Communism .. post Socialism .. post modernist as we have culture .. to one of Enlightenment.</p>
+                </div>
+             </div>
+        </section>
+
+<!--------------Arcticle-------->
+
+    <section class="campus">
+        <h1>Articles</h1>    
+        <div class="cont">
+            <main class="grid">
+                <article>
+                    <img src="images/1.jpg"alt="">
+                    <div class="texts">
+                        <h3>Zen Earth</h3>
+                        <p>Tourism is the Planets future.</p>
+                        <a href="zen.html"><button >Read More</button></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/2.jpg" alt="">
+                    <div class="texts">
+                        <h3>IGCLA 2018</h3>
+                        <p>Green Toilets,Social Media Festival...</p>
+                        <a href="india.html"><button >Read More</button></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/1r.jpg" alt="">
+                    <div class="texts">
+                        <h3>Japanese Gardens</h3>
+                        <p>A garden requires patient labor and attention.</p>
+                        <a href="japan.html"><button >Read More</button></a>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </section> 
+
+<!--------------Contact-------->
+
+    <section class="cta">
+        <h1>Contact Us<br>For Any Help</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+<!--------------JS Toggle-------->
+
+        <script>
+            var navLinks  = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

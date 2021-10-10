@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+        <title>AIKNT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="vediogallery.html">VIDEO GALLERRY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <h1>About Us</h1>
+        </section>
+
+<!--------------about us content-------->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>About AIKNT</h1>
+            <p>This Website at the moment is an informational site for all things Inter-Disciplinary as to the interests and activities of Dr. George Joseph Themplangad. 
+
+                His academic background is an MBBS from Manipal & an MBA in International Business from Pace University Nee York. 
+                
+                He was instrumental in getting Thd Green Bio Toilets on Indian Railway. 
+                
+                His current interests include Converting Zhumsn waste to Electricity as well as Landscaping & Garbage Management of a Whole District .. such as to make it look comparable to A place in Japan of Scandinavia or Switzerland .. cleanliness. 
+                
+                He lived in the USA for 25 Years and is planning to relocate in India to Telangana to attempt to bring some of his innovative ideas to fruition. 
+                
+                He is politically very astute and informed. He has filed a PIL case in HC of Kerala and its text & Order are also available on this Website along with his previous PIL on Railway Toilets.
+                
+                He is living in Kerala and is open to communicate with any like-minded progressive persons</p>
+        </div>
+        <div class="about-col">
+            <img src="images/about.JPG">
+        </div>
+    </div>
+</section>
+
+<!--------------JS Toggle-------->
+
+        <script>
+            var navLinks  = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

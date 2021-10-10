@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+        <title>AIKNT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="vediogallery.html">VIDEO GALLERRY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>      
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <h1>Zen Earth</h1>
+        </section>
+
+<!--------------aerticle content-------->
+<section class="article">
+   <div style="padding: 20px" >
+        <iframe type="application/pdf" src="article/Zen Earth.pdf" style="width: 100%; height: 620px;margin-top: 50px;"></iframe>
+    </div>
+</section>
+
+<!--------------JS Toggle-------->
+
+        <script>
+            var navLinks  = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

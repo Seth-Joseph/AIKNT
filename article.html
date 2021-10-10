@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+        <title>AIKNT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="vediogallery.html">VIDEO GALLERRY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <h1>Articles</h1>
+        </section>
+
+<!--------------article content-------->
+
+      <div class="content clearfix">
+            <div class="main-content">
+                <h1 class="recent-post-title">Recent Posts</h1>
+                <div class="post">
+                    <img src="images/3r.jpg" class="post-image">
+                    <div class="post-preview">
+                        <h1><a href="" class="ti">Zen Earth</a></h1>
+                        <i class="far fa-user"> Dr.GEORGE JOSEPH THEMPLANGAD</i>
+                        &nbsp;<br>
+                        <i class="far fa-calendar-alt"> 19 Aug 2019 </i>
+                        <p class="preview-text">
+                            Tourism is the Planets future. Tourism only is the only ISM that supersedes
+                            all other ism’s, for it promotes universal Peace and prosperity.                            
+                        </p>
+                        <a href="zen.html" class="btn read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/2.jpg" class="post-image">
+                    <div class="post-preview">
+                        <h1><a href="" class="ti">IGCLA 2018</a></h1>
+                        <i class="far fa-user">  Dr.GEORGE JOSEPH THEMPLANGAD</i>
+                        &nbsp;<br>
+                        <i class="far fa-calendar-alt">  IGCLA 2018                        </i>
+                        <p class="preview-text">
+                            Green Toilets – An ENERGY Solution <br>
+                            KUTHIRA MALIGA PALACE<br>
+                            SOCIAL MEDIA FESTIVAL an idea whose time is here For Manipal university to experiment
+                        </p>
+                        <a href="india.html" class="btn read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/2r.jpg" class="post-image">
+                    <div class="post-preview">
+                        <h1><a href="" class="ti">Japanese Gardens</a></h1>
+                        <i class="far fa-user">  Dr.GEORGE JOSEPH THEMPLANGAD</i>
+                        &nbsp;
+                        
+                        <p class="preview-text">
+                            Much of the landscape of Japan, an island nation, consists of
+mountains and oceans. These ever-present mountains and oceans
+are reduced to two of the primary and enduring components of
+the Japanese Garden — rocks and water
+                        </p>
+                        <a href="japan.html" class="btn read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--------------JS Toggle-------->
+
+        <script>
+            var navLinks  = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

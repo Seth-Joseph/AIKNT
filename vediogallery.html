@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content="with=device-width, initial-scale=1.0">
+        <title>AIKNT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css" integrity="sha512-/RoGptdIQLGZFJM6oJtnyY6Od//uZz/WypWmymsYCzjPbWfpPiec2P8exRmuDCdc9qKOKqMqpnmXn66P4aSiCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/289c06e4e2.js" crossorigin="anonymous"></script>    
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js" integrity="sha512-LEMSLV4QxWkOsqIaZokdaHRufDpIsQIerU62hScKRSSYJFZsGb4ORrmlZqAoQDGLlEHO6d4bF/YMtM9uZPXM8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="vediogallery.html">VIDEO GALLERRY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>      
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <h1>Video Gallery</h1>
+        </section>
+
+<!--------------vedio gallery-------->
+
+<div class="conta">
+    <div class="video-conta">
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FhRCtrtueWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_0OJg3sR-Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QfsmgxqcUw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZnvcPzWpN2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+    </div>
+</div>
+
+<!--------------JS Toggle-------->
+       <script>
+            var navLinks  = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
